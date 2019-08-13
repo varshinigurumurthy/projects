@@ -1,0 +1,532 @@
+body,html 
+{
+  font-family: Arial, Helvetica, sans-serif;
+   height: 100%;
+    margin: 0;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color:rgba(255,255,0,0.5);
+    color: white;
+    padding: 14px 20px;
+    margin: 10;
+    border: none;
+    cursor: pointer;
+    width: 47.5%;
+     
+}
+
+button:hover {
+    background-color:rgba(0,0,0,0.5);
+}
+
+.but1
+{
+  
+  background-image: linear-gradient(to right,indigo,lightblue , violet );
+}
+.but1:hover
+{
+  opacity: 0.8;
+  background-image: linear-gradient(to right,violet,lightblue , indigo );
+}
+/* Extra styles for the cancel button */
+.signupbtn {
+    width: auto;
+    padding: 10px 40px;
+    background-color: #f44336;
+    font-family: georgia;
+    }
+a
+{
+  color: white;
+  text-decoration: none;
+}
+
+
+.loginbtn
+
+{
+    width: auto;
+    padding: 10px 50px;
+    background-color: green;
+    font-family: georgia;
+}
+/* Center the image and position the close button */
+.imgcontain {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+}
+
+.contain {
+    padding: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+span.psw {
+    float: right;
+    padding-top: 50px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height:110%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+    
+    padding: 10px;
+    background-color: white;
+  /* background-image: linear-gradient(to right bottom ,#ccccb3, #ffffff);*/
+ 
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    height: 70%;
+
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 30px;
+    top: 2%;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: green;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+   #forget
+   {
+    margin-left: 50%;
+   } 
+
+
+
+.bg {
+    /* The image used */
+   /* background-image: url("img/hero-bg.jpg");*/
+   
+    height: 99.9%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+  position: fixed;
+ margin-top:-790px;
+   width: 100%;
+}
+
+/* The navbar */
+.topnav {
+ width: 100%;
+height:80px;
+margin-bottom:3px;
+  overflow: hidden;
+
+  background-color:rgba(191,191,191,0.5);
+  position:sticky;
+  
+  left:120px;
+  padding-bottom:10px;
+  padding-top:10px;
+
+
+}
+
+/* Navbar links */
+.topnav a {
+  
+  color: white;
+  opacity: 2  ;
+  float:right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav img{
+  height: 100%;
+  width: 10%;
+  z-index: 1;
+}
+.but{
+  position: absolute;
+  top: 50%;
+  left:20%;
+  transform: translate(-50%, -50%);
+  transition: 1 ease;
+}
+.btn{
+  border:1px solid yellow;
+  padding: 10px 30px;
+  background-color:rgba(255,255,0,0.5);
+  text-decoration: none;
+  color:white;
+  border-radius: 0px;
+}
+.but a:hover
+{
+  background-color:rgba(0,0,0,0.5);
+}
+
+.centered {
+    position: absolute;
+    top: 38%;
+    left: 32%;
+    color: white;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+}
+#chk
+{
+  float:left;
+  bottom: 40%;
+color: black;
+}
+
+.container1 {
+    position: relative;
+    width: 50%;
+   
+}
+
+
+.middle1 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.front1:hover img {
+  opacity: 0.8;
+}
+
+.front1:hover .middle1 
+{
+ opacity: 1;
+}
+
+.text1 {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+#ffleft
+{
+display:inline-block;
+padding:150px;
+margin-left:50px;
+float:left;
+}
+
+#ffmid
+{
+display:inline-block;
+padding:150px;
+float:left;
+}
+
+#ffright
+{
+display:inline-block;
+padding:150px;
+float:left;
+
+}
+.card1 {
+  position: absolute;
+   width: 300px;
+  height: 280px;
+  margin: -30px;
+  float: left;
+  perspective: 500px;
+}
+
+.content1 {
+  position: absolute;
+  width: 100%;
+  height:80%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.text1 {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+.front1
+ {
+  width: 100%;
+  height: 200%;
+   color: #03446A;
+ display:inline-block;
+  font-size: 60px;
+  border-radius: 5px;
+ 
+}
+.front1 img
+{
+  width:100%;
+  height:50%;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  
+  position: relative;
+  margin: auto;
+}
+
+
+/* Number text (1/3 etc) */
+
+
+
+.mySlides  img
+{
+  width: 100%;
+  height: 100%;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+.popular
+{
+  padding-top:8%;
+}
+
+
+
+/*Services*/
+
+.service img{
+  padding:15px;
+}
+.service h1{
+  font-size: 45px;
+  color:black;
+  text-shadow: 1px grey;
+  font-family: Candara;
+}
+
+.service p{
+  font-size: 50px;
+  color:grey;
+  
+  font-family: Candara;
+}
+.service i{
+font-size: 15px;
+color:grey;
+font-family: sans-serif;
+}
+.service p{
+  text-align: center;
+  font-size:22px;
+  font-family: Comic Sans MS;
+  color:black;
+}
+.service p:hover{
+color: orange;
+}
+.service img:hover{
+  transform: rotate(5deg);
+  color: orange;
+  }
+
+
+/*Features*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.feature{
+  margin-bottom:50%;
+  text-align: center;
+  color:black;
+  padding:10px;
+}
+.feature h1{
+ font-size: 45px;
+  color:black;
+  text-shadow: 1px grey;
+  font-family: Candara; 
+  margin-top: 10%;
+}
+.feature p{
+  text-align: center;
+  font-size:22px;
+  font-family: Comic Sans MS;
+  color:grey;
+}
+.feature b{
+   font-size:20px;
+  font-family: Comic Sans MS;
+  color:grey; 
+}
+  .feature i
+  {
+    border:1px solid;
+    border-radius: 50%;
+    width: 65px;
+    padding: 10px;
+  }
+.feature b:hover{
+    color: lightblue;
+}
+  .feature i:hover
+  {
+    transform:scale(1.5,1.5);
+    color: lightblue;
+  }
+/*Back to Top*/
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 22px;
+  font-style:bold;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+/*Feedback*/
+.feed img{
+ height:50px; 
+ width:50px;
+position:fixed;
+margin-left:96%;
+bottom:50%;
+
+}
+.feed img,a:hover{
+    transform:scale(1,1);
+    color: green;
+}

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body,html 
+{
+  font-family: Arial, Helvetica, sans-serif;
+   height: 100%;
+    margin: 0;
+     width:auto;
+}
+a
+{
+  color: white;
+  text-decoration: none;
+}
+.bg {
+    /* The image used */
+   /* background-image: url("img/hero-bg.jpg");*/
+    background: linear-gradient(rgba(0,0.7,0,0),rgba(0,0,0,0)), url(img/hero-bg.jpg) no-repeat;
+    height:50% ; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+  position: fixed;
+ margin-top:-10px;
+ 
+  width: 100%;
+}
+.topnav {
+ width: 100%;
+height:80px;
+margin-bottom:3px;
+  overflow: hidden;
+
+  background-color:rgba(191,191,191,0.5);
+  position:sticky;
+  
+  left:120px;
+  padding-bottom:10px;
+  padding-top:10px;
+
+
+}
+
+/* Navbar links */
+.topnav a {
+  
+  color: white;
+  opacity: 2;
+  float:right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav img{
+  height: 100%;
+  width: 15%;
+  z-index: -1;
+}
+
+.centered {
+    position: absolute;
+    top:38%;
+    left: 50%;
+    bottom: 40%;
+    color: white;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+}
+.clearfix {
+ overflow: auto;
+    border: 1px solid ;
+    position: absolute;
+    width: 70%;
+   height:300px;
+    padding: 15px;
+    
+    }
+
+
+.img2 {
+    float: left;
+    margin: auto;
+
+    box-shadow: 10px 10px 5px grey;
+}
+
+.clearfix p
+{
+    margin: 5px 15px 5px 5px;
+    
+}
+.hide {
+  display: none;
+}
+p {
+  font-weight: bold;
+  color:black;
+}
+.checked {
+    color: orange;
+}
+.price
+{
+background-color: #eee;
+color:black;
+width: 50%;
+margin-left: 20%;
+
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+    
+}
+#p1,#p4,#p7
+{
+  border:1px solid black;
+float:right;
+margin-right:7.5%;
+margin-left: 5%;
+padding-bottom: 1.7%;
+background-color: #eee; 
+height:100%;
+width:20%;
+
+}
+#p1 p,#p4 p,#p7 p{
+  font-size: 50px;
+  text-align: center;
+}
+#p1 button,#p4 button,#p7 button{
+  border:1px solid green;
+background-color: orange;
+border-radius:8px;
+width:50%;
+padding-bottom: 8%;
+text-align: center;
+}
+#p2,#p5,#p8
+{
+   border:1px solid black;
+float:right;
+margin-right:7.5%;
+margin-left: 5%;
+padding-bottom: 1.7%;
+background-color: #eee; 
+height:100%;
+width:20%;
+
+}
+#p2 p,#p5 p,#p8 p{
+  font-size: 50px;
+  text-align: center;
+}
+#p2 button,#p5 button,#p8 button{
+  border:1px solid green;
+background-color: orange;
+border-radius:8px;
+width:50%;
+padding-bottom: 8%;
+text-align: center;
+}
+#p3,#p6,#p9
+{
+  border:1px solid black;
+float:right;
+margin-right:7.5%;
+margin-left: 5%;
+padding-bottom: 1.7%;
+background-color: #eee; 
+height:100%;
+width:20%;
+
+}
+#p3 p,#p6 p,#p9 p{
+  font-size: 50px;
+  text-align: center;
+}
+#p3 button,#p6 button,#p9 button{
+  border:1px solid green;
+background-color: orange;
+border-radius:8px;
+width:50%;
+padding-bottom: 8%;
+text-align: center;
+}
+
+</style>
+<script>
+function show1(){
+    document.getElementById('div1').style.display ='block';
+    document.getElementById('div2').style.display ='none';
+    document.getElementById('div3').style.display ='none';
+    document.getElementById('p1').style.display='block';
+    document.getElementById('p2').style.display='none';
+    document.getElementById('p3').style.display='none';
+    
+  }
+
+function show2(){
+  document.getElementById('div2').style.display = 'block';
+  document.getElementById('div3').style.display ='none';
+  document.getElementById('div1').style.display ='none';
+  document.getElementById('p1').style.display='none';
+    document.getElementById('p2').style.display='block';
+    document.getElementById('p3').style.display='none';
+  
+}
+
+function show3(){
+  document.getElementById('div3').style.display = 'block';
+  document.getElementById('div2').style.display ='none';
+  document.getElementById('div1').style.display ='none';
+  document.getElementById('p1').style.display='none';
+    document.getElementById('p2').style.display='none';
+    document.getElementById('p3').style.display='block';
+}
+
+function show4(){
+    document.getElementById('div4').style.display ='block';
+    document.getElementById('div5').style.display ='none';
+    document.getElementById('div6').style.display ='none';
+    document.getElementById('p4').style.display='block';
+    document.getElementById('p5').style.display='none';
+    document.getElementById('p6').style.display='none';
+    
+  }
+
+function show5(){
+  document.getElementById('div5').style.display = 'block';
+  document.getElementById('div6').style.display ='none';
+  document.getElementById('div4').style.display ='none';
+  document.getElementById('p4').style.display='none';
+    document.getElementById('p5').style.display='block';
+    document.getElementById('p6').style.display='none';
+  
+}
+
+function show6(){
+  document.getElementById('div6').style.display = 'block';
+  document.getElementById('div5').style.display ='none';
+  document.getElementById('div4').style.display ='none';
+  document.getElementById('p4').style.display='none';
+    document.getElementById('p5').style.display='none';
+    document.getElementById('p6').style.display='block';
+}
+
+
+function show7(){
+    document.getElementById('div7').style.display ='block';
+    document.getElementById('div8').style.display ='none';
+    document.getElementById('div9').style.display ='none';
+    document.getElementById('p7').style.display='block';
+    document.getElementById('p8').style.display='none';
+    document.getElementById('p9').style.display='none';
+    
+  }
+
+function show8(){
+  document.getElementById('div8').style.display = 'block';
+  document.getElementById('div9').style.display ='none';
+  document.getElementById('div7').style.display ='none';
+  document.getElementById('p7').style.display='none';
+    document.getElementById('p8').style.display='block';
+    document.getElementById('p9').style.display='none';
+  
+}
+
+function show9(){
+  document.getElementById('div9').style.display = 'block';
+  document.getElementById('div8').style.display ='none';
+  document.getElementById('div7').style.display ='none';
+  document.getElementById('p7').style.display='none';
+    document.getElementById('p8').style.display='none';
+    document.getElementById('p9').style.display='block';
+}
+</script>
+</head>
+<body>
+ <div class="bg">
+  <div class="centered">
+    Package&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;->&nbsp;&nbsp;&nbsp;&nbsp;Adventure
+
+</div>
+  
+
+<div class="container">
+    <div class="topnav">
+       <img src="safar.png">
+         <a href="contact.html">Contact</a>
+      <a href="package.html">Package</a>
+      <a href="about.html">About</a>
+      <a href="indexnew.php">Home</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<br>
+
+    <h1>Exotic Andaman and Nicobar islands &nbsp | &nbsp 5 nights 6 days</h1>
+<center>
+
+<div class="clearfix">
+
+<img class="img2" src="andaman2.jpg" alt="Andaman & Nicobar" width="300" height="300">
+<p>
+<h2><em><b>Port Blair (1N) Havelock (2N) Niel Island (1N) Port Blair (1N)</b></em></h2>
+<h4>
+Welcome Dinner Cruise, Complimentary Candid photography session Gala.<br>
+ Dinner in Hotel* (category specific) Multilingual tour manager.</h4>
+
+</p>
+
+<div class="price">
+<input type="radio" name="tab"  onclick="show1();" />
+Standard
+<input type="radio" name="tab"  onclick="show2();" />
+Deluxe
+<input type="radio" name="tab"  onclick="show3();" />
+Premium
+<div id="div1">
+    <hr>
+  <table>
+    <tr>
+      <td><p>Neil Island</p></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><p> Pearl Park Beach Resort<p></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="div2" class="hide">
+    <hr>
+  <table >
+    <tr>
+      <td><p>Havelock</p></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><p> TSG Blue Resort </p></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="div3" class="hide">
+    <hr>
+  <table>
+    <tr>
+      <td><p>Port Blair</p></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><p> Sentinel Hotel</p></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+     </td>
+    </tr>
+  </table>
+</div>
+</div>
+</div>
+</div>
+<div id="p1" >
+
+  <p><i class="fa fa-inr">&nbsp;&nbsp;40000</i></p>
+  <i>Per Person Price</i><br>
+  <button id="sub" type="Submit" value="Book Online"><a href="payment.html" style="color:black;font-size: 20px;text-align: center;">Book Onine</a></button><br><br><br>
+  <button id="sub" type="Submit" value="Customize"><a href="final.php" style="color:black;font-size: 20px;text-align: center;">Customize</a></button>
+</div>
+<div id="p2" class="hide">
+  <p><i class="fa fa-inr">&nbsp;&nbsp;52000</i></p>
+  <i>Per Person Price</i><br>
+  <button id="sub" type="Submit" value="Book Online"><a href="payment.html" style="color:black;font-size: 20px;text-align: center;">Book Onine</a></button><br><br><br>
+  <button id="sub" type="Submit" value="Customize"><a href="final.php" style="color:black;font-size: 20px;text-align: center;">Customize</a></button>
+</div>
+<div id="p3" class="hide">
+  <p><i class="fa fa-inr" >&nbsp;&nbsp;62850</i></p>
+  <i>Per Person Price</i><br>
+  <button id="sub" type="Submit" value="Book Online"><a href="payment.html" style="color:black;font-size: 20px;text-align: center;">Book Onine</a></button><br><br><br>
+  <button id="sub" type="Submit" value="Customize"><a href="final.php" style="color:black;font-size: 20px;text-align: center;">Customize</a></button>
+</div>
+
+</div>
+
+</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <h1>Weekend trip to Rishikesh  &nbsp | &nbsp Nights 3 Days</h1>
+    <center>
+<div class="clearfix">
+
+<img class="img2" src="rishi2.jpg" alt="rishikesh" width="300" height="300">
+<p>
+<h2><em><b>Rishikesh (2N)</b></em></h2>
+<p> River Rafting, Cliff Jumping, Camping, Rappelling, Kayaking, Bungee jumping, Fying fox, Mountain biking, Trekking etc.</p><br><br>
+</p>
+<div class="price">
+<input type="radio" name="tab"  onclick="show4();" />
+Budget
+<input type="radio" name="tab"  onclick="show5();" />
+Standard
+<input type="radio" name="tab"  onclick="show6();" />
+Deluxe
+<div id="div4">
+    <hr>
+  <table>
+    <tr>
+      <td><p>Rishikesh</p></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><p> Hill Top Swiss Cottage</p></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+     </td>
+    </tr>
+  </table>
+</div>
+<div id="div5" class="hide">
+    <hr>
+  <table >
+    <tr>
+      <td><p>Rishikesh</p></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><p>Green By One Hotels</p></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="div6" class="hide">
+    <hr>
+  <table>
+    <tr>
+      <td><p>Rishikesh</p></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><p>EllBee Ganga View</p></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>
+</div>
+</div>
+<div id="p4" >
+
+  <p><i class="fa fa-inr">&nbsp;&nbsp;13500</i></p>
+  <i>Per Person Price</i><br>
+  <button id="sub" type="Submit" value="Book Online"><a href="payment.html" style="color:black;font-size: 20px;text-align: center;">Book Onine</a></button><br><br><br>
+  <button id="sub" type="Submit" value="Customize"><a href="final.php" style="color:black;font-size: 20px;text-align: center;">Customize</a></button>
+</div>
+<div id="p5" class="hide">
+  <p><i class="fa fa-inr">&nbsp;&nbsp;18000</i></p>
+  <i>Per Person Price</i><br>
+  <button id="sub" type="Submit" value="Book Online"><a href="payment.html" style="color:black;font-size: 20px;text-align: center;">Book Onine</a></button><br><br><br>
+  <button id="sub" type="Submit" value="Customize"><a href="final.php" style="color:black;font-size: 20px;text-align: center;">Customize</a></button>
+</div>
+<div id="p6" class="hide">
+  <p><i class="fa fa-inr" >&nbsp;&nbsp;25800</i></p>
+  <i>Per Person Price</i><br>
+  <button id="sub" type="Submit" value="Book Online"><a href="payment.html" style="color:black;font-size: 20px;text-align: center;">Book Onine</a></button><br><br><br>
+  <button id="sub" type="Submit" value="Customize"><a href="final.php" style="color:black;font-size: 20px;text-align: center;">Customize</a></button>
+</div>
+
+</div>
+
+</div>
+
+</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <h1>Glimpse of Ladakh Monasteries & Khardungla Top &nbsp | &nbsp 3 Nights 4 Days</h1>
+    <center>
+<div class="clearfix">
+
+<img class="img2" src="leh2.jpg" alt="leh ladakh" width="300" height="300">
+<p>
+<h2><em><b>Leh-Ladakh (3N)</b></em></h2>
+
+</p>
+<p> River Rafting, Cliff Jumping, Camping, Rappelling, Kayaking, Bungee jumping, Fying fox, Mountain biking, Trekking etc.</p><br><br>
+<div class="price">
+<input type="radio" name="tab"  onclick="show7();" />
+Standard
+<input type="radio" name="tab"  onclick="show8();" />
+Deluxe
+<input type="radio" name="tab"  onclick="show9();" />
+Premium
+<div id="div7">
+    <hr>
+  <table>
+    <tr>
+      <td><p>Leh</p></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><p>Hotel Hill Town</p></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+</td>
+  </table>
+</div>
+<div id="div8" class="hide">
+    <hr>
+  <table >
+    <tr>
+      <td><p>Leh</p></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><p>Hotel Hill Town</p></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+   </td>
+    </tr>
+  </table>
+</div>
+<div id="div9" class="hide">
+    <hr>
+  <table>
+    <tr>
+      <td><p>Leh</p></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><p>The Grand Dragon Ladakh</p></td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td><span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span></td>
+    </tr>
+  </table>
+</div>
+</div>
+</div>
+</div>
+<div id="p7" >
+
+  <p><i class="fa fa-inr">&nbsp;&nbsp;35000</i></p>
+  <i>Per Person Price</i><br>
+  <button id="sub" type="Submit" value="Book Online"><a href="payment.html" style="color:black;font-size: 20px;text-align: center;">Book Onine</a></button><br><br><br>
+  <button id="sub" type="Submit" value="Customize"><a href="final.php" style="color:black;font-size: 20px;text-align: center;">Customize</a></button>
+</div>
+<div id="p8" class="hide">
+  <p><i class="fa fa-inr">&nbsp;&nbsp;37000</i></p>
+  <i>Per Person Price</i><br>
+  <button id="sub" type="Submit" value="Book Online"><a href="payment.html" style="color:black;font-size: 20px;text-align: center;">Book Onine</a></button><br><br><br>
+  <button id="sub" type="Submit" value="Customize"><a href="final.php" style="color:black;font-size: 20px;text-align: center;">Customize</a></button>
+</div>
+<div id="p9" class="hide">
+  <p><i class="fa fa-inr" >&nbsp;&nbsp;43568</i></p>
+  <i>Per Person Price</i><br>
+  <button id="sub" type="Submit" value="Book Online"><a href="payment.html" style="color:black;font-size: 20px;text-align: center;">Book Onine</a></button><br><br><br>
+  <button id="sub" type="Submit" value="Customize"><a href="final.php" style="color:black;font-size: 20px;text-align: center;">Customize</a></button>
+</div>
+
+</div>
+
+</div>
+
+
+</center>
+
+</body>
+</html>

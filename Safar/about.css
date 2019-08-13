@@ -1,0 +1,271 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profile {
+  text-align: center;
+  padding: 0 16px;
+  size: 6px;
+  height:50%;
+}
+
+.profile::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+ a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+ a:hover {
+  opacity: 0.7;
+}
+.card img{
+	height: 30%;
+	width: 90%;
+	padding-left: 10%;
+}
+#leftimg{
+	float:left;
+ margin-left:20%; 
+ bottom:10%;
+}
+
+
+.clear h1{
+	float:right;
+	clear:both;
+
+}
+/* Footer Css*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: gray;
+   color: white;
+   text-align: center;
+}
+.left
+{
+float:left;
+margin-left: 40px;
+margin-top: 10px;
+}
+.left h2{
+font-style: bold;
+font-family: Arial, Helvetica, sans-serif;
+}
+.left h6{
+  font-style:;
+  font-family: arial;
+  font-size: 13px;
+}
+.right
+{
+  float:right;
+  margin-right:5%;
+margin-top: 10px;
+}
+.right h2{
+font-style: bold;
+font-family: Arial, Helvetica, sans-serif;  
+
+  }
+
+
+.center{
+
+  float: center;
+  padding-right: 25%;
+
+}
+
+.center h2{
+  margin-top: 10px;
+font-style: bold;
+font-family: Arial, Helvetica, sans-serif;  
+
+  }
+  .center li
+  {
+    font-size: 18px;
+
+font-family: Arial, Helvetica, sans-serif;
+  }
+hr{
+  color:grey;
+
+}
+a{
+  color:white;
+  text-decoration: none;
+}
+a:hover{
+  background-color: orange;
+  color: white;
+}
+
+/*Icons*/
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+    background:white;
+    -webkit-font-smoothing: antialiased;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:  1% 0 1% 0;
+}
+._12 {
+    font-size: 1.2em;
+}
+._14 {
+    font-size: 1.4em;
+}
+ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+    width: 250px;
+    display:block;
+    margin: 0 auto;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: gray;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: gray;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-youtube {
+    padding:10px 16px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: gray;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: gray;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-instagram {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: gray;
+}
+.fa-instagram:hover {
+    background-color: #e25714;
+}
+
